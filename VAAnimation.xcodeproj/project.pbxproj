@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D688DE3024D38A6200083FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE2F24D38A6200083FAB /* AppDelegate.swift */; };
-		D688DE3224D38A6200083FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE3124D38A6200083FAB /* SceneDelegate.swift */; };
-		D688DE3424D38A6200083FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE3324D38A6200083FAB /* ViewController.swift */; };
+		D688DE3424D38A6200083FAB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE3324D38A6200083FAB /* RootViewController.swift */; };
 		D688DE3724D38A6200083FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D688DE3524D38A6200083FAB /* Main.storyboard */; };
 		D688DE3924D38A6400083FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D688DE3824D38A6400083FAB /* Assets.xcassets */; };
 		D688DE3C24D38A6400083FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D688DE3A24D38A6400083FAB /* LaunchScreen.storyboard */; };
+		D688DE4624D38ABC00083FAB /* TappableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE4324D38ABC00083FAB /* TappableView.swift */; };
+		D688DE4724D38ABC00083FAB /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE4424D38ABC00083FAB /* ModalViewController.swift */; };
+		D688DE4824D38ABC00083FAB /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE4524D38ABC00083FAB /* Animator.swift */; };
+		D688DE4A24D38AC700083FAB /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688DE4924D38AC700083FAB /* UIStoryboard+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D688DE2C24D38A6200083FAB /* VAAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VAAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D688DE2F24D38A6200083FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D688DE3124D38A6200083FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D688DE3324D38A6200083FAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D688DE3324D38A6200083FAB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		D688DE3624D38A6200083FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D688DE3824D38A6400083FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D688DE3B24D38A6400083FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D688DE3D24D38A6400083FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D688DE4324D38ABC00083FAB /* TappableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TappableView.swift; sourceTree = "<group>"; };
+		D688DE4424D38ABC00083FAB /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		D688DE4524D38ABC00083FAB /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		D688DE4924D38AC700083FAB /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				D688DE2F24D38A6200083FAB /* AppDelegate.swift */,
-				D688DE3124D38A6200083FAB /* SceneDelegate.swift */,
-				D688DE3324D38A6200083FAB /* ViewController.swift */,
+				D688DE3324D38A6200083FAB /* RootViewController.swift */,
+				D688DE4524D38ABC00083FAB /* Animator.swift */,
+				D688DE4424D38ABC00083FAB /* ModalViewController.swift */,
+				D688DE4324D38ABC00083FAB /* TappableView.swift */,
+				D688DE4924D38AC700083FAB /* UIStoryboard+Extension.swift */,
 				D688DE3524D38A6200083FAB /* Main.storyboard */,
 				D688DE3824D38A6400083FAB /* Assets.xcassets */,
 				D688DE3A24D38A6400083FAB /* LaunchScreen.storyboard */,
@@ -137,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D688DE3424D38A6200083FAB /* ViewController.swift in Sources */,
+				D688DE4824D38ABC00083FAB /* Animator.swift in Sources */,
+				D688DE4724D38ABC00083FAB /* ModalViewController.swift in Sources */,
+				D688DE4A24D38AC700083FAB /* UIStoryboard+Extension.swift in Sources */,
+				D688DE3424D38A6200083FAB /* RootViewController.swift in Sources */,
 				D688DE3024D38A6200083FAB /* AppDelegate.swift in Sources */,
-				D688DE3224D38A6200083FAB /* SceneDelegate.swift in Sources */,
+				D688DE4624D38ABC00083FAB /* TappableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
